@@ -1,0 +1,115 @@
+:root{
+  --Red: #f65351;
+  --Blue: #0a317b;
+  --White: #ffffff;
+  --Very-light-grayish-blue: #f7fafd;
+  --Light-grayish-blue-1: #e5effa;
+  --Light-grayish-blue-2: #dde7ee;
+  --Grayish-blue: #939dae;
+  --Dark-grayish-blue: #5e6778;
+  --Very-dark-blue: #1c202b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: 'Plus Jakarta Sans';
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+}
+body{
+  font-family: 'Plus Jakarta Sans';
+}
+.main{
+  padding: 24px 16px;
+}
+.notifications{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  & .title{
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    font-size: 20px;
+    word-spacing: 9px;
+  }
+  & .number{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--Blue);
+    width: 32px;
+    height: 25px;
+    color: var(--White);
+    border-radius: 6px;
+  }
+  & .mark{
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.post{
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 8px;
+  width: 343px;
+  display: flex;
+  gap: 13px;
+  padding: 16px;
+  font-size: 0.875em; /*14px*/
+  margin: 0 auto 10px;
+  color: var(--Dark-grayish-blue);
+  & .img{
+    width: 39px;
+    height: 39px;
+  }
+  & .name{
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+  }
+  & .reaction{
+    font-weight: bold;
+  }
+  & .group{
+    color: var(--Blue);
+    font-weight: bold;
+  }
+  & .time{
+    color: var(--Grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  & .message-container{
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 12px;
+  }
+  & .message{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+  }
+  & .picture{
+    width: 39px;
+    height: 39px;
+  }
+}
+
+.read{
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color: var(--Red);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
